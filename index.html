@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <meta http-equiv="refrsh" content="1">
+    <link rel=" stylesheet" href="css/bootstrap/css/bootstrap.min.css">
+    <link rel=" stylesheet" href="css/style.css">
+    <link rel=" icon" href="images/favicon-d32x32.png">
+    <meta http-equiv="reresh" content="1">
+    <title>ROCK PAPER SCISSORS</title>
+</head>
+<body>
+    <div class="display" id="display">
+        <div class="content rounded-3">
+            <div class="head">
+                <p class="h3 fw-bold text-secondary">RULES</p>
+                <img src="images/icon-close.svg" id="close">
+            </div>
+            <div>
+                <img  class="rule" src="images/image-rules.svg">
+            </div>
+            <img class="mobileclose"  id="close2" src="images/icon-close.svg" id="close">
+        </div>
+    </div>
+    <div class=" navbar head  border border-secondary border-3 rounded-4 mt-3 px-3">
+        <img src="images/logo.svg" alt="">
+        <div class="score text-white text-center bg-white px-3 rounded-4">
+            <p class="h4 text-primary">Score</p>
+            <h1 id="score" class="display-1 fw-bold text-secondary">0</h1>
+        </div>
+    </div>
+    <div class="content">
+        <div class="game" id="game">
+            <img class="tri" src="images/bg-triangle.svg" alt="">
+            <img class="img1" id="paper"  src="images/icon-paper.svg" alt="">
+            <img class="img2" id="scissors" src="images/icon-scissors.svg" alt="">
+            <img class="img3" id="rock" src="images/icon-rock.svg" alt="">
+        </div>
+        <div class="picked" id="picked">
+            <div class="desk">
+                <div class="player me-4">
+                    <p class="text-center h4 text-white mb-5 fw-bold">YOU PICKED</p>
+                    <img class="img1" id="playerimg" src="images/icon-scissors.svg" alt="">
+                </div>
+                <div class="result m-5 text-center" id="show">
+                    <h1 class="text-white mb-4 fw-bold display-5" id="check">YOU LOSE</h1>
+                    <button class=" w-100 px-5 py-3 rounded-3 border-0 fw-bold" id="play">PLAY AGAIN</button>
+                </div>
+                <div class="computer">
+                    <p class="text-center h4 text-white mb-5 fw-bold">THE HOUSE PICKED</p>
+                    <div class="overlay">
+                        <div class="circle"></div>
+                        <img class="img2" id="computerimg" src="images/icon-rock.svg" alt="">
+                    </div>
+                </div>
+            </div>
+     
+        </div>
+    </div>
+    <div class="rules px-4 border border-white pt-2 text-white rounded-3 " id="rules">
+        <p class="h4">Rules</p>
+    </div>
+</body>
+</html>
+<script src="javascript/script.js" ></script>
